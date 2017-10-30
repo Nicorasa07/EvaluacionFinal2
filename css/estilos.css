@@ -1,0 +1,131 @@
+body{
+  background-color:  #02010a;
+  font-family: Dancing Script;
+}
+#contenido{
+  width: 900px;
+  margin: auto;
+  padding: 0;
+}
+#contenido div{
+  box-sizing: border-box;
+}
+#header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  height: 80px;
+}
+#header h1{
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  float: left;
+  position: relative;
+  left: 15px;
+}
+nav{
+  float: right;
+  height: 100%;
+  margin-top: 15px;
+  font-size: 17px;
+}
+li{
+  list-style-type: none;
+  display: inline;
+}
+.c1 a{
+  color: white;
+  text-decoration: none;
+  padding: 12px 10px;
+  margin: 12px 5px 0px 5px;
+}
+.c2 a{
+  color: white;
+  padding: 12px 10px;
+  margin: 12px 5px 0px 5px;
+}
+#imagencentral{
+  background-color: #82c3a6;
+  margin-top: -16px;
+}
+#imagencentral img{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  box-shadow: 1px 1px black;
+}
+#imagensecundaria{
+  background-color: #d5c75f;
+  margin-top: -16px;
+  border: 1px;
+  display: flex;
+  flex-direction: row;
+}
+#imagensecundaria img{
+  width: 100%;
+  margin-top: 15px;
+}
+#paisajes{
+  transition-property: transform border box-shadow;
+  transition-duration: 1s;
+  border: 1px solid;
+}
+#paisajes:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+}
+#retratos{
+  transition-property: transform box-shadow;
+  transition-duration: 1s;
+  border: 1px solid;
+}
+#retratos:hover{
+  transform: translate(20px,-5px);
+  box-shadow: 2px 2px #82c3a6;
+}
+figcaption{
+  text-align: center;
+  font-size: 1.2em;
+}
+#piedepagina{
+  background-color: #C6d5c5;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0px 0px 10px 10px;
+}
+.footers{
+  width: 100%;
+  margin-left: 40px;
+}
+
+@media (max-width:900px) {
+  #header{
+    height: 100px;
+  }
+  #header h1{
+    text-align: center;
+    float: none;
+    top: 15px;
+  }
+  nav{
+    text-align: center;
+    float: none;
+    top: 50px;
+  }
+  #imagencentral img{
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+  #imagensecundaria{
+    flex-direction: column;
+  }
+  #imagensecundaria img{
+    width: 100%;
+  }
+  #contenido{
+    width: 100%;
+  }
+  #piedepagina{
+    flex-direction: column;
+  }
+}
